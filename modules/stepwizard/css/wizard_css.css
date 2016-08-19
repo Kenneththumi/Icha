@@ -1,0 +1,115 @@
+#stepwizard {
+	margin-bottom: 0px;
+	overflow: visible;
+	width: 100%;
+	height: 82px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #660066;
+	background-color: #f7f7f7;
+}
+#stepwizard a {
+	color: #FFF;
+	text-decoration: none;
+	float: left;
+	display: block;
+	height: 79px;
+	width: auto;
+	padding-right: 30px;
+	padding-left: 20px;
+	padding-top: 10px;
+	
+}
+#stepwizard a:hover {
+	color: #900;
+	text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+.past {
+	background-image: url(../images/pastbg.png);
+	background-repeat: repeat-x;
+}
+.current {
+	background-image: url(../images/currentbg.png);
+	background-repeat: repeat-x;
+}
+.future {
+	background-image: url(../images/futurebg.png);
+	background-repeat: repeat-x;
+}
+.p2p {
+	background-image: url(../images/pasttopast.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: transparent;
+	height: 83px;
+	width: 53px;
+	float: left;
+}
+.p2c {
+	background-image: url(../images/pasttocurrent.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: transparent;
+	height: 83px;
+	width: 53px;
+	float: left;
+}
+.c2f {
+	background-image: url(../images/currenttofuture.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 98px;
+	width: 50px;
+}
+.c2e {
+	background-image: url(../images/currenttoend.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 98px;
+	width: 50px;
+}
+
+.f2f {
+	background-image: url(../images/futuretofuture.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 98px;
+	width: 50px;
+}
+.f2e {
+	background-image: url(../images/futuretoend.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 98px;
+	width: 50px;
+}
+#stepwizard .current h2 , #stepwizard .current p{
+	margin: 0px;
+	padding: 0px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+#stepwizard .past h2 , #stepwizard .past p{
+	color: #FFF;
+}
+#stepwizard h2 , #stepwizard p{
+	margin: 0px;
+	padding: 0px;
+	color: #CCC;
+}
+#stepwizard h2{
+	padding-bottom: 0px;
+	font-size: 30px;
+}
+#maincontent input, #maincontent textarea, #maincontent select, #maincontent button, #maincontent input[type="checkbox"] {
+  border: 1px solid #E2E2E4;
+  box-shadow: none;
+  color: #666666;
+  padding: 7px;
+}
+#myform{
+	padding-top: 20px;
+}

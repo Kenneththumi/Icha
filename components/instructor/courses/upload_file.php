@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href='dropzone.css' >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="dropzone.js"></script>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Upload a document</button>
+<div class="dropzone" id="myAwesomeDropzone"> 
+    <form action="upload_file.php" method="post" enctype="multipart/form-data">
+                Choose a Document:<input type="file" name="file">
+                <input type="submit" class="btn" value="upload" name="upload">       
+            </form>
+            </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+            
+            
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+Dropzone.options.myAwesomeDropzone = {
+  paramName: "file", // The name that will be used to transfer the file
+  maxFilesize: 2, // MB
+  
+  accept: function(file, done) {
+    if (file.name == "justinbieber.jpg") {
+      done("Naha, you don't.");
+    }
+    else { done(); }
+  }
+};
+</script>
+
+</body>
+</html>
+<?php
+if(isset($_POST['upload'])){
+   if(!empty($_FILE)){
+       $temp = $_FILE['file']['tmp_name'];
+       $dir_separator=DIRECTORY_SEPARATOR;
+       
+       $dest=dirname(__FILE__).$dir_separator.'uploads'.$dir_separator.$_FILES['file']['name'];
+       
+       
+       move_uploaded_file($temp, $dest);
+   }
+}
+?>
+

@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+
+<html ng-app="HelloApp">
+<head>
+	<title></title>
+</head>
+<body ng-controller="HelloCtrl">
+	<h4>Transforms first letter into a upper case</h4>
+  <form>
+	  <input type="text" ng-model="name"/>
+	</form>
+	<div>{{name|titlecase}}</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script type="text/javascript">
+		// Code defining custom module consisting of a filter
+		// The module needs to be included as dependency for using the filter, titlecase
+		//
+		angular.module('CustomFilterModule', [])
+			.filter( 'titlecase', function() {
+				return function( input ) {
+					return input.replace(/\w\S*/g,
+					 function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+				}
+			});
+		// Angular App on this page 
+		// Included CustomFilterModule as dependency
+		//
+		angular.module('HelloApp', [ 'CustomFilterModule'])
+			.controller('HelloCtrl', ['$scope', function($scope){
+				$scope.name = '';
+			}])
+	</script>
+</body>
+</html>

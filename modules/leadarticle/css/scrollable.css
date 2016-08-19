@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+    root element for the scrollable.
+    when scrolling occurs this element stays still.
+*/
+.scrollable {
+	/* required settings */
+	position: relative;
+	overflow: hidden;
+	width: 73.5%;
+        margin-left: 15px;
+	height: 430px;
+	top: 0px;
+	background-image: url(../../../styles/ichatemplate/images/bannershadow.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 44px;	/* custom decorations */
+}
+.scrolltext{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 260px;
+}
+.eventlist{
+	position: relative;
+	overflow: hidden;
+	width: 97.5%;
+	float: left;
+	height: 130px;
+}
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items, .scrolltext .items, .eventlist .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+        z-index: 9;
+}
+@media (max-width: 1382px){
+    .scrollable .items div {
+            float:left;
+            width: 845px;
+    }
+    /* single scrollable item */
+    .scrollable img {
+            float:left;
+            background-color:#fff;
+            width: auto !important;
+            height: 527px;
+            max-width: 1920px;
+    }
+
+    /* active item */
+    .scrollable .active {
+            border:2px solid #000;
+            position:relative;
+            cursor:default;
+    }
+    
+    .scrollable div.article {
+	float:left;
+	width: 680px;
+        position: relative;
+        z-index: 10;
+        margin-top: -280px;
+        background-color: #ca333a;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-left: solid 5px #fff;
+        margin-left: 10px;
+    }
+}
+@media (min-width: 1383px){
+    .scrollable .items div {
+            float:left;
+            width: 1395px;
+    }
+    /* single scrollable item */
+    .scrollable img {
+            float:left;
+            background-color:#fff;
+            width: 100% !important;
+            height: 527px;
+            max-width: 1920px;
+    }
+
+    /* active item */
+    .scrollable .active {
+            border:2px solid #000;
+            position:relative;
+            cursor:default;
+    }
+    .scrollable div.article {
+        background-color: #ca333a;
+        border-left: 5px solid #fff;
+        float: left;
+        margin-left: 10px;
+        margin-top: -280px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 20px;
+        position: relative;
+        width: 70%;
+        z-index: 10;
+    }
+}
+
+.scrollable div.article a{        
+        color: #fff;
+}
+.scrollable div.article h1{
+        font-family:  'Open Sans', sans-serif;
+        font-weight: 350;
+        letter-spacing: -1px;
+        font-size: 25px;
+}
+.scrollable div.article p{
+    font-size: 13px;
+    line-height: 20px;
+}
+#coursehighlights .eventlist .items div.slide {
+	float:left;
+	width: 1300px;
+}
+#coursehighlights div.itemList1, #coursehighlights div.itemList{
+	float:left;
+	width: 33.25%;
+	padding-top: 15px;
+	height: 130px;
+	display: table;
+        padding-top: 20px;
+}
+#coursehighlights a.browse {
+	cursor: pointer;
+	display: block;
+	font-size: 1px;
+	height: 30px;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 5px;  
+}
+#coursehighlights a.prev{
+	color: #FFF;
+	background-image: url(../images/prev.png);
+	background-repeat: no-repeat;
+	margin-top: 30px;
+}
+#coursehighlights a.next{
+	color: #FFF;
+	background-image: url(../images/next.png);
+	background-repeat: no-repeat;
+}
+#coursehighlights div.eventnav{
+	float: left;
+	width: 30px;
+	display: table;
+}
+#bannerimg{
+	height: 322px;
+	width: 740px;
+    overflow: hidden;
+}
+#bannerarticle{
+	float: right;
+	height: 282px;
+	width: 354px;
+	color: #FFF;
+	background-color: #261864;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+#bannerarticle a{
+	color: #FFF;
+	text-decoration: none;
+}
+#bannerarticle a h1.leadtitle{
+	color: #dbd5f9;
+	width: 98%;
+	padding-left: 2%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	padding-bottom: 20px;
+	margin-top: 10px;
+	font-weight: normal;
+}
+p.leadbody{
+	line-height: 25px;
+}
+
+#bannertext .items div a{
+	color: #FFF;
+	text-decoration: none;
+        text-transform: capitalize;
+}
+
+#bannertext .items div a h1{
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.banner_courses div.items{
+    width: 2000em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    z-index: 10;
+    text-align: left;
+    position:absolute;
+    clear:both;
+    margin-top: 0px;
+}
+.banner_courses div.slide{
+    width: 435px;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 345px;
+    float: left;
+}
+.banner_courses div.slide h3{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+.banner_courses div.slide p{
+    font-size: 13px;
+}
+.banner_courses div.slide a.smalldate{
+    font-size: 11px;
+    text-align: right;
+    width: 100%;
+    display: block;
+    color: #f8b9b7 !important;
+}
+.banner_courses a:hover{
+    text-decoration: underline !important;
+}
+.banner_courses .coursenav{
+    width: 35px;
+    float: right;
+}
+.banner_courses a.browse {
+  cursor: pointer;
+  display: block;
+  font-size: 1px;
+  height: 30px;
+  width: 13px;
+  margin: 0 2px 0 5px;
+  float: left;
+}
+.banner_courses a.left {
+  background-image: url("../images/prev.png");
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: 0px;
+}
+.banner_courses a.right {
+  background-image: url("../images/next.png");
+  background-repeat: no-repeat;
+  color: #fff;
+}
+@media (max-width: 767px){
+    .banner_courses .coursenav{
+        width: 70px;
+        float: right;
+    }
+    .banner_courses a.browse {
+      cursor: pointer;
+      display: block;
+      font-size: 1px;
+      height: 30px;
+      width: 20px;
+      margin: 0 2px 0 5px;
+      float: left;
+    }
+}

@@ -1,0 +1,229 @@
+body {
+	background-image: url(../images/measlesbg.jpg);
+	background-repeat: repeat-x;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFF;
+	font-family: Calibri;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+#container {
+	height: auto;
+	width: 963px;
+	margin-top: 45px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#top {
+	height: 116px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+#logo {
+	height: 116px;
+	width: 549px;
+	float: left;
+	margin-top: -30px;
+}
+/*-------------------------------------------Search Styles------------------------------------------------------------*/
+#search {
+	height: 82px;
+	width: 328px;
+	background-image: url(../images/searchbg.png);
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 0px;
+}
+#search form#myform{
+	margin-top: 30px;
+	margin-left: 30px !important;
+	width: 275px;
+	height: 20px;
+	border: 1px solid #FFF;	
+	display: table;
+	overflow: hidden;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important; 
+}
+#search input.pfbc-textbox{
+	background-color: transparent;
+	float: left;
+	margin-top: 0px;
+	color: #FFF;
+	border: 0px none transparent;
+	width: 240px;
+}
+#search div.pfbc-buttons{
+	float: left;
+}
+#search div.pfbc-buttons input{
+	background-color: transparent;
+	background-image: url(../images/searchbutton.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+	border: 0px none transparent;
+}
+a.advancedsearch{
+	display: block;
+	margin-right: 30px;
+	float: right;
+	text-decoration: none;
+	margin-top: -15px;
+	margin-bottom: 17px;
+	color: #FFF;
+}
+/*------------------------------------------------Banner Styles---------------------------------------------*/
+#banner {
+	height: 263px;
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+#banner a{
+	color: #333;
+}
+#bannershadow {
+	height: 30px;
+	width: 100%;
+}
+#innercontainer {
+	height: auto;
+	width: 934px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#leftcol {
+	float: left;
+	height: auto;
+	width: 614px;
+	padding-bottom: 20px;
+}
+#rightcol {
+	height: auto;
+	width: 297px;
+	margin-top: 20px;
+	float: right;
+}
+#rightcol div.holder {
+	background-color: #f3f4f5;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+#footer {
+	background-image: url(../images/footerbg.jpg);
+	background-repeat: repeat-x;
+	height: 237px;
+	width: 100%;
+	clear: both;
+}
+
+#footercontainer {
+	height: auto;
+	width: 963px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+}
+#footerlogo {
+	float: left;
+	height: 112px;
+	width: 612px;
+}
+#footerviews {
+	border: 1px solid #FFF;
+	float: left;
+	margin-right: 20px;
+}
+/*----------------------------------------Header Styles-----------------------------------------------------*/
+h1.moduleheading, h1.articleTitle{
+	font-family: 'Rufina', serif;
+	font-size: 35px;
+	letter-spacing: 1px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+h1.moduleheading{
+	font-size: 30px;
+}
+h1.leadtitle{
+	font-family: 'Rufina', serif;
+}
+h1.articleTitle, h1.fullarticleTitle{
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #09C;
+	padding-left: 0px;
+	margin-top: 5px;
+}
+.widget ul{
+	margin: 0px;
+	padding-top: 15px !important;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.widget ul li{
+	list-style: none;
+	padding: 0px;
+	width: 90%;
+	margin-left: 20px !important;
+	margin-right: auto;
+}
+p.articleDate{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+/*-----------------------------------------Misc Styles-------------------------------------------------*/
+span.viewsource{
+	font-size: 10px;
+	color: #666;
+	float: right;
+	clear: both;
+	width: 100%;
+	text-align: right;
+}
+a.backhome{
+	font-size: 12px;
+	color: #F00;
+	float: right;
+	clear: both;
+	width: 100%;
+	text-align: right;
+}
+p.highAccess{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003;
+	font-weight: bold;
+	width: 102px;
+	padding: 0px;
+	text-align: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	background-image: url(../images/highlyaccessed.jpg);
+	background-repeat: no-repeat;
+	height: 25px;
+	float: right;
+}
+#newarticle{
+	background-image: url(../images/new.jpg);
+	float: right;
+	height: 20px;
+	width: 37px;
+	background-repeat: no-repeat;
+}

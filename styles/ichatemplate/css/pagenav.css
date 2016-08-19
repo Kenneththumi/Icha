@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul#pgNav {
+	padding: 5px;
+	float: right;
+	width: auto;
+	text-align:right;
+	list-style-type: none;
+	margin-bottom: 0px;
+}
+
+ul#pgNav li{
+	float: left;
+}
+#pgNav a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #639;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#pgNav a.pgNumbers, .pgNumbers{
+	background-color: #E2E2E2;
+	padding: 7px;
+	border: 1px solid #CACACA;
+	margin-top: 10px;
+	margin-right: 1px;
+	margin-bottom: 10px;
+	margin-left: 1px;
+}
+.pgNumbers{
+	background-color: #609;
+	margin-top: -7px;
+	color: #FFF;
+}
+.nextpg, .firstpg{
+	background-color: #F4F4F4;
+	border: 1px solid #CACACA;
+	margin-top: -7px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	padding-top: 7px;
+	padding-right: 30px;
+	padding-bottom: 7px;
+	padding-left: 30px;
+	color: #06C;
+}
+
+#pgNav .lastpg{
+	background-color: #F4F4F4;
+	border: 1px solid #CACACA;
+	margin-top: -7px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 30px;
+	padding-bottom: 7px;
+	padding-left: 30px;
+	color: #06C;
+}
+ul#pgNav li a:hover{
+	color: #F00;
+}

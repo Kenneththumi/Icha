@@ -1,0 +1,65 @@
+@charset "utf-8";
+body {
+	background-color: #faf9f9;
+	margin: 0px;
+	padding: 0px;
+        font-family: Calibri;
+}
+a{
+    text-decoration: none;
+    font-size: 11px;
+}
+#logincontainer {
+	background-image: url(../images/loginshadow.png);
+	background-position: center bottom;
+	height: auto;
+	width: 457px;
+	padding-bottom: 59px;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+}
+#loginbody {
+	background-color: #FFF;
+	height: 355px;
+	width: 457px;
+	border: 1px solid #d9d9d9;
+}
+#top {
+	height: 100px;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d6d6d6;
+}
+#main {
+	height: auto;
+	width: 82%;
+	padding-left: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+#loginbody div.row{
+	border: 0px none transparent;	
+}
+#loginbody div.even{
+	background: transparent;
+}
+#loginbody input.pfbc-textbox{
+	border-radius: 0px;
+	border: 1px solid #d9d9d9;
+	width: 80%;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#loginbody [type=submit]{
+	border-radius: 0px;
+	border: 1px solid #d9d9d9;
+	float: right;
+	margin-right: 80px;
+        padding: 10px;
+        width: 150px;
+}

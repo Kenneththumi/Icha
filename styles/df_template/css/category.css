@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#catbox {
+	border: 1px solid #F0F0F0;
+	padding: 5px;
+	float: left;
+	height: auto;
+	width: 220px;
+	margin: 5px;
+}
+#cattitle {
+	background-color: #E9E9E9;
+	padding: 5px;
+	width: 210px;
+	border: 1px solid #CCC;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	height:20px;
+}
+#cattitle a{
+	text-transform: capitalize;
+	color: #900;
+	float: left;
+}
+.subholder{
+	height: auto;
+	width: 100%;
+	padding: 4px;
+}
+#smalltext{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 10px;
+	float: right;
+}
+#titletext{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	float: left;
+	color: #999;
+	letter-spacing: 2px;
+	margin-top: 3px;
+	margin-right: 5px;
+	clear: both;
+	height: auto;
+	width: 733px;
+}
+h1.categoryheading{
+	float: left;
+}

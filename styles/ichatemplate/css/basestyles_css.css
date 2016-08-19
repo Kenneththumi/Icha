@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+/* Notification Styles */
+.message{
+    background-size: 40px 40px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,transparent 75%, transparent);                                      
+     box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+     border-radius: 5px;
+     border: 1px solid;
+     color: #fff;
+     padding: 10px;
+     text-shadow: 0 1px 0 rgba(0,0,0,.5);
+     animation: animate-bg 5s linear infinite;
+}
+.message h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.info{
+     background-color: #4ea5cd;
+     border-color: #3b8eb5;
+}
+
+.error{
+     background-color: #de4343;
+     border-color: #c43d3d;
+}
+     
+.warning{
+     background-color: #eaaf51;
+     border-color: #d99a36;
+}
+
+.success{
+     background-color: #61b832;
+     border-color: #55a12c;
+}
+
+h2.programareas, h1.fullarticleTitle {
+	color: #333333;
+	font-family: Calibri;
+	font-size: 34px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	margin: 10px auto 5px;
+	padding-bottom: 5px;
+	padding-left: 1%;
+	width: 97%;
+}
+input {
+	border: 1px solid rgba(51,51,51,0.0);
+	color: #333333;
+	font-size: 12px;
+	height: 35px;
+	padding-left: 10px;
+	background-color: #F0F0F0;
+}
+input.widthauto, input[type=submit], select.widthauto{
+    width: auto !important;
+}
+select{
+    padding: 8px;
+}
+label.pfbc-label{
+	color: #666;
+}
+.pfbc-element{
+	padding-bottom: 10px;
+}
+input.pfbc-textbox{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#myformbutton{
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	height: 35px;
+	width: 170px;
+	float: right;
+	border: 1px solid #CACACA;
+}
+div.pfbc-radio{
+    width: auto;
+    float: left;
+    padding-left: 10px;
+}
+#attachdoc {
+	background-color: #F0F0F0;
+border: 1px solid #CCC;
+background-image: url(../images/pdficon.png);
+background-repeat: no-repeat;
+background-position: center;
+height: 100px;
+width: 99%;
+text-align: center;
+}
+.qq-upload-button {
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	margin-top: 30px;
+	padding: 7px 0;
+	text-align: center;
+	width: 30%;
+	background-color: #3E3E40;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.qq-upload-button input{
+	width:inherit;
+	height:inherit;
+}
+#fileholder {
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	margin-top: 30px;
+	padding: 7px 0;
+	text-align: center;
+	width: 98%;
+	background-color: #3E3E40;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+	margin-left:auto;
+	margin-right:auto;
+}
+input.pfbc-textbox, select.pfbc-select{
+	width: 95% !important;
+}
+#approvalform input[type="submit"]{
+	float: right;
+}
+table.tablelist{
+	border-collapse: collapse
+}
+table.tablelist td{
+	line-height: 1.42857;
+        padding: 10px;
+        vertical-align: top;
+	border: 1px solid #E6E7E8;
+}
+table.tablelist tr.tabletitle{
+	font-size: 14px;
+	font-weight: bold;
+}
+table.tablelist tr.odd{
+	background-color: #EEE;	
+}
+table.tablelist tr.odd:hover, 
+table.tablelist tr.even:hover{
+	background-color:#E4E4E4;
+}

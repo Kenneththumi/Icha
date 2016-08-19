@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>International Center for Humanitarian Affairs | ICHA Kenya</title>
+<link href="css/template_css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+<script>
+ jQuery(window).load(function(){
+         jQuery('#social .socialtag').mouseenter(function(){ 
+             jQuery(this).stop();
+             jQuery(this).animate({'right':'0px'}, 'slow');  
+        });
+         jQuery('#social .socialtag').mouseleave(function(){
+             jQuery(this).stop();
+             jQuery(this).animate({'right':'-140px'}, 'slow');
+        });
+});
+</script>
+</head>
+
+<body>
+<div id="social">
+	<div class="member socialtag">
+    	<img src="images/member-tag.png" width="188" height="44" />
+    </div>
+    <div class="search socialtag">
+    	<img src="images/search-tag.png" width="188" height="44" />
+    </div>
+    <div class="facebook socialtag">
+    	<img src="images/facebook-tag.png" width="188" height="43" />
+    </div>
+    <div class="twitter socialtag">
+    	<img src="images/twitter-tag.png" width="188" height="42" />
+    </div>
+</div>
+<div id="container">
+  <div id="banner">
+    <div id="top">
+      <div id="ichalogo"><img src="images/ichalogo.png" /></div>
+      <div id="menu">Content for  id "menu" Goes Here</div>
+    </div>
+    <div id="bannermid">Content for  id "bannermid" Goes Here</div>
+    <div id="bannertext">Content for  id "bannertext" Goes Here</div>
+  </div>
+  <div id="highlights"></div>
+  <div id="testimonials"></div>
+  <div id="coursehighlights"></div>
+  <div id="main_courses"></div>
+  <div id="footer"></div>
+  <div id="maps"></div>
+</div>
+</body>
+</html>
